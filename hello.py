@@ -10,7 +10,7 @@ ht()              # 隐藏 箭头
 angle = 60
 distance_ = 100
 
-left(angle )
+left(angle)
 fd(distance_)
 
 home()  #  
