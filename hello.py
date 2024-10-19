@@ -7,27 +7,8 @@ import time
 pensize(5)        # 控制 笔的大小
 pencolor("red")   # 控制 笔的颜色
 ht()              # 隐藏 箭头
-angle = 60
-distance_ = 100
 
-left(angle)
-fd(distance_)
-
-home()  #  
- 
-fd(distance_)
- 
-left(90 + 30)
-
-fd(distance_)
- 
-
-clear()
-up()
-home()  #回到 原点 也是笔还在画画 ，所以得up起来， 到了指定的地方再down（）
-down()
-circle(50, 180)
-
- 
-
+circle(50, 180)      # 半径是 50px
+circle(-50, steps=3) # steps 参数为3, 将会在一个半径为 50 像素的圆内画个内切正三边形(等边三角形) 
+dot(20, "green")
 time.sleep(1)
