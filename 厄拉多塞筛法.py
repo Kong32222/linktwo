@@ -29,3 +29,5 @@ while i<len(a):
     i += 1
 print(a)
 
+List = list(9)
+print  (List )
