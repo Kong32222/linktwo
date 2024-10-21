@@ -15,7 +15,7 @@
  
 
 num = input("请输入一个自然数：")
-a = list(range(2, int(num)+1))
+a = list(range(2, int(num)+1)) 
 
 i = 0
 while i<len(a):
