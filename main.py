@@ -5,8 +5,27 @@
 每一轮报数会淘汰一只猴子,最后剩下的一只猴子被选为大王。请问当选大王的猴子是第几号?
 
 '''
-List = list("apple")
+def find_monkey_king(total_monkeys, step):  
+    # 初始化猴子列表，从1编号到total_monkeys  
+    monkeys = list(range(1, total_monkeys + 1))  
+    index = 0  # 当前报数的起始位置  
+  
+    while len(monkeys) > 1:  
+        # 计算要淘汰的猴子的索引（从0开始）  
+        index = (index + step - 1) % len(monkeys)  
+        # 淘汰该猴子  
+        monkeys.pop(index)  
+  
+    # 返回最后剩下的猴子的编号  
+    return monkeys[0]  
+  
+# 总猴子数和报数的步长  
+total_monkeys = 41  
+step = 3  
+  
+# 找到大王猴子的编号  
+monkey_king = find_monkey_king(total_monkeys, step)  
+print(f"当选大王的猴子是第{monkey_king}号") 
+        
 
-for Intnum in List:
-    print(Intnum)
  
